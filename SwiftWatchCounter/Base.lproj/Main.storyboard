@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Counter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CounterViewController" customModule="SwiftWatchCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-9X-DNi">
+                                <rect key="frame" x="20" y="142" width="560" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="77"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-js-EGu">
+                                <rect key="frame" x="20" y="407" width="560" height="30"/>
+                                <state key="normal" title="Count"/>
+                                <connections>
+                                    <action selector="Increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enC-5P-Nzr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B67-B8-udc">
+                                <rect key="frame" x="24" y="20" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PE-7r-lKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B67-B8-udc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="F0V-Ej-m6O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4lp-js-EGu" secondAttribute="trailing" id="P3Y-Ck-6aL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4lp-js-EGu" secondAttribute="leading" id="QDC-cu-BhY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="D9P-9X-DNi" secondAttribute="leading" id="a2F-Lq-Zu4"/>
+                            <constraint firstItem="B67-B8-udc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="a4F-yt-z3z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4lp-js-EGu" secondAttribute="bottom" constant="163" id="apd-Xt-Liy"/>
+                            <constraint firstItem="4lp-js-EGu" firstAttribute="leading" secondItem="D9P-9X-DNi" secondAttribute="trailing" constant="-560" id="dXP-cH-wSu"/>
+                            <constraint firstItem="D9P-9X-DNi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="122" id="fTL-iO-vas"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D9P-9X-DNi" secondAttribute="trailing" id="hVF-LQ-33y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D9P-9X-DNi" secondAttribute="bottom" constant="363" id="nu5-HH-lMp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Result" destination="D9P-9X-DNi" id="Kro-An-8eY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="318"/>
         </scene>
     </scenes>
 </document>
