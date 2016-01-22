@@ -19,22 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-9X-DNi">
-                                <rect key="frame" x="20" y="142" width="560" height="95"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="77"/>
+                                <rect key="frame" x="20" y="103" width="560" height="134"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="144"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-js-EGu">
-                                <rect key="frame" x="20" y="407" width="560" height="30"/>
+                                <rect key="frame" x="20" y="473" width="560" height="33"/>
                                 <gestureRecognizers/>
-                                <state key="normal" title="Count"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Count!"/>
                                 <connections>
                                     <action selector="ContinuouslyIncrement:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="T2c-kk-AHA"/>
+                                    <action selector="ContinuouslyIncrement:" destination="BYZ-38-t0r" eventType="touchDragInside" id="U2M-KW-Kq0"/>
                                     <action selector="Increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enC-5P-Nzr"/>
+                                    <outletCollection property="gestureRecognizers" destination="dsk-bd-SNj" appends="YES" id="ggQ-F0-S2q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B67-B8-udc">
-                                <rect key="frame" x="24" y="20" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B67-B8-udc">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PE-7r-lKD"/>
@@ -43,16 +47,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="B67-B8-udc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1FK-Vc-R2U"/>
+                            <constraint firstItem="4lp-js-EGu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="453" id="3IX-I3-7TL"/>
                             <constraint firstItem="B67-B8-udc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="F0V-Ej-m6O"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4lp-js-EGu" secondAttribute="trailing" id="P3Y-Ck-6aL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4lp-js-EGu" secondAttribute="bottom" constant="94" id="QCh-HR-fyd"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4lp-js-EGu" secondAttribute="leading" id="QDC-cu-BhY"/>
+                            <constraint firstItem="D9P-9X-DNi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="VWo-TH-rfs"/>
                             <constraint firstAttribute="leadingMargin" secondItem="D9P-9X-DNi" secondAttribute="leading" id="a2F-Lq-Zu4"/>
-                            <constraint firstItem="B67-B8-udc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="a4F-yt-z3z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4lp-js-EGu" secondAttribute="bottom" constant="163" id="apd-Xt-Liy"/>
                             <constraint firstItem="4lp-js-EGu" firstAttribute="leading" secondItem="D9P-9X-DNi" secondAttribute="trailing" constant="-560" id="dXP-cH-wSu"/>
-                            <constraint firstItem="D9P-9X-DNi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="122" id="fTL-iO-vas"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B67-B8-udc" secondAttribute="trailing" id="glk-yh-DLC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D9P-9X-DNi" secondAttribute="trailing" id="hVF-LQ-33y"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D9P-9X-DNi" secondAttribute="bottom" constant="363" id="nu5-HH-lMp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B67-B8-udc" secondAttribute="bottom" constant="559" id="raN-uF-tAr"/>
+                            <constraint firstItem="B67-B8-udc" firstAttribute="leading" secondItem="D9P-9X-DNi" secondAttribute="trailing" constant="-560" id="zRb-uh-Nbs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -61,6 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="tTw-1Z-1NT"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="dsk-bd-SNj"/>
             </objects>
             <point key="canvasLocation" x="278" y="318"/>
         </scene>

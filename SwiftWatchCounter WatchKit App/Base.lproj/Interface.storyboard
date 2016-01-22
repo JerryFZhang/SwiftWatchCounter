@@ -21,6 +21,15 @@
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="IET-I2-PbO">
+                        <items>
+                            <menuItem title="Reset" icon="trash" id="Tfc-X6-ZLC">
+                                <connections>
+                                    <action selector="Reset" destination="AgC-eL-Hgc" id="sqC-Hu-C3A"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="Result" destination="PZG-0y-hCA" id="BJ2-WS-apA"/>
                     </connections>
