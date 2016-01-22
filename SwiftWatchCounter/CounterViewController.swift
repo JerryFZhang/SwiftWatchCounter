@@ -39,6 +39,14 @@ class CounterViewController : UIViewController{
         
     }
     
+    @IBAction func ContinuouslyIncrement(sender: AnyObject) {
+        
+        counter++
+        Result.text = String(counter)
+        NSLog("Incrementing")
+
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

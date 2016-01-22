@@ -26,8 +26,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-js-EGu">
                                 <rect key="frame" x="20" y="407" width="560" height="30"/>
+                                <gestureRecognizers/>
                                 <state key="normal" title="Count"/>
                                 <connections>
+                                    <action selector="ContinuouslyIncrement:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="T2c-kk-AHA"/>
                                     <action selector="Increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enC-5P-Nzr"/>
                                 </connections>
                             </button>
@@ -58,6 +60,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="tTw-1Z-1NT"/>
             </objects>
             <point key="canvasLocation" x="278" y="318"/>
         </scene>
