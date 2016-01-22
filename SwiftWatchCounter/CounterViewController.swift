@@ -21,10 +21,11 @@ class CounterViewController : UIViewController{
     
     @IBOutlet weak var Result: UILabel!
     
+    
     var counter = 0
     
     @IBAction func Reset(sender: AnyObject) {
-        
+
         counter = 0
         Result.text = String(counter)
         NSLog("Cleared")
