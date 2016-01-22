@@ -28,6 +28,8 @@ class InterfaceController: WKInterfaceController {
         NSLog("Incremented")
         
     }
+    
+    
     @IBAction func Reset() {
         counter = 0
         Result.setText(String(counter))
