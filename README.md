@@ -38,6 +38,8 @@ For Apple Watches:
 - Use the vibration motor on the watch when deep pressed.
 - Touch and hold to continuously count.
 - Comments in code.
+- Font size change to make it larger on larger iPhones.
+- Launch screen and App Icon(just a simple one).
 
 # License
 This component is available under MIT license.
