@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-9X-DNi">
-                                <rect key="frame" x="20" y="103" width="560" height="134"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="144"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="20" y="128" width="560" height="128"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="144"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-js-EGu">
-                                <rect key="frame" x="20" y="473" width="560" height="33"/>
+                                <rect key="frame" x="20" y="450" width="560" height="33"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Count!"/>
@@ -33,11 +33,10 @@
                                     <action selector="ContinuouslyIncrement:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="T2c-kk-AHA"/>
                                     <action selector="ContinuouslyIncrement:" destination="BYZ-38-t0r" eventType="touchDragInside" id="U2M-KW-Kq0"/>
                                     <action selector="Increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enC-5P-Nzr"/>
-                                    <outletCollection property="gestureRecognizers" destination="dsk-bd-SNj" appends="YES" id="ggQ-F0-S2q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B67-B8-udc">
-                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
@@ -48,18 +47,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="B67-B8-udc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1FK-Vc-R2U"/>
-                            <constraint firstItem="4lp-js-EGu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="453" id="3IX-I3-7TL"/>
-                            <constraint firstItem="B67-B8-udc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="F0V-Ej-m6O"/>
+                            <constraint firstItem="4lp-js-EGu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWf-VW-KKW"/>
+                            <constraint firstItem="4lp-js-EGu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="430" id="JFI-IU-2J3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4lp-js-EGu" secondAttribute="trailing" id="P3Y-Ck-6aL"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4lp-js-EGu" secondAttribute="bottom" constant="94" id="QCh-HR-fyd"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4lp-js-EGu" secondAttribute="leading" id="QDC-cu-BhY"/>
-                            <constraint firstItem="D9P-9X-DNi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="VWo-TH-rfs"/>
+                            <constraint firstItem="D9P-9X-DNi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="Wt9-5w-wAy"/>
                             <constraint firstAttribute="leadingMargin" secondItem="D9P-9X-DNi" secondAttribute="leading" id="a2F-Lq-Zu4"/>
                             <constraint firstItem="4lp-js-EGu" firstAttribute="leading" secondItem="D9P-9X-DNi" secondAttribute="trailing" constant="-560" id="dXP-cH-wSu"/>
+                            <constraint firstItem="B67-B8-udc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="deO-3M-76v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="B67-B8-udc" secondAttribute="trailing" id="glk-yh-DLC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="D9P-9X-DNi" secondAttribute="trailing" id="hVF-LQ-33y"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D9P-9X-DNi" secondAttribute="bottom" constant="363" id="nu5-HH-lMp"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B67-B8-udc" secondAttribute="bottom" constant="559" id="raN-uF-tAr"/>
+                            <constraint firstItem="D9P-9X-DNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZ8-Ix-kUf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B67-B8-udc" secondAttribute="bottom" constant="550" id="n5c-Yh-biV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D9P-9X-DNi" secondAttribute="bottom" constant="344" id="ns3-8U-zYE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4lp-js-EGu" secondAttribute="bottom" constant="117" id="tF4-Mf-Aw6"/>
                             <constraint firstItem="B67-B8-udc" firstAttribute="leading" secondItem="D9P-9X-DNi" secondAttribute="trailing" constant="-560" id="zRb-uh-Nbs"/>
                         </constraints>
                     </view>
@@ -68,8 +69,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="tTw-1Z-1NT"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="dsk-bd-SNj"/>
             </objects>
             <point key="canvasLocation" x="278" y="318"/>
         </scene>

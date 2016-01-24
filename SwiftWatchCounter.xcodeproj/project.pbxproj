@@ -12,7 +12,6 @@
 		FA468A721C518A2E00840CC6 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468A711C518A2E00840CC6 /* CounterViewController.swift */; };
 		FA468A751C518A2E00840CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA468A731C518A2E00840CC6 /* Main.storyboard */; };
 		FA468A771C518A2E00840CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA468A761C518A2E00840CC6 /* Assets.xcassets */; };
-		FA468A7A1C518A2E00840CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA468A781C518A2E00840CC6 /* LaunchScreen.storyboard */; };
 		FA468A851C518A2E00840CC6 /* SwiftWatchCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468A841C518A2E00840CC6 /* SwiftWatchCounterTests.swift */; };
 		FA468A901C518A2E00840CC6 /* SwiftWatchCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468A8F1C518A2E00840CC6 /* SwiftWatchCounterUITests.swift */; };
 		FA468A951C518A2E00840CC6 /* SwiftWatchCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FA468A941C518A2E00840CC6 /* SwiftWatchCounter WatchKit App.app */; };
@@ -24,6 +23,7 @@
 		FA468AAF1C518A2F00840CC6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468AAE1C518A2F00840CC6 /* NotificationController.swift */; };
 		FA468AB11C518A2F00840CC6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468AB01C518A2F00840CC6 /* ComplicationController.swift */; };
 		FA468AB31C518A2F00840CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA468AB21C518A2F00840CC6 /* Assets.xcassets */; };
+		FA75A3F51C554796005213F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA75A3F41C554796005213F6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +89,6 @@
 		FA468A711C518A2E00840CC6 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		FA468A741C518A2E00840CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA468A761C518A2E00840CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA468A791C518A2E00840CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA468A7B1C518A2E00840CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA468A801C518A2E00840CC6 /* SwiftWatchCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWatchCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA468A841C518A2E00840CC6 /* SwiftWatchCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWatchCounterTests.swift; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		FA468AB01C518A2F00840CC6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		FA468AB21C518A2F00840CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA468AB41C518A2F00840CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA75A3F41C554796005213F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,12 +170,12 @@
 		FA468A6E1C518A2E00840CC6 /* SwiftWatchCounter */ = {
 			isa = PBXGroup;
 			children = (
+				FA75A3F41C554796005213F6 /* LaunchScreen.storyboard */,
 				FA37AA581C5525B800834CDF /* Font+MonospacedDigits.swift */,
 				FA468A6F1C518A2E00840CC6 /* AppDelegate.swift */,
 				FA468A711C518A2E00840CC6 /* CounterViewController.swift */,
 				FA468A731C518A2E00840CC6 /* Main.storyboard */,
 				FA468A761C518A2E00840CC6 /* Assets.xcassets */,
-				FA468A781C518A2E00840CC6 /* LaunchScreen.storyboard */,
 				FA468A7B1C518A2E00840CC6 /* Info.plist */,
 			);
 			path = SwiftWatchCounter;
@@ -382,7 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA468A7A1C518A2E00840CC6 /* LaunchScreen.storyboard in Resources */,
+				FA75A3F51C554796005213F6 /* LaunchScreen.storyboard in Resources */,
 				FA468A771C518A2E00840CC6 /* Assets.xcassets in Resources */,
 				FA468A751C518A2E00840CC6 /* Main.storyboard in Resources */,
 			);
@@ -491,14 +491,6 @@
 				FA468A741C518A2E00840CC6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FA468A781C518A2E00840CC6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA468A791C518A2E00840CC6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		FA468A991C518A2F00840CC6 /* Interface.storyboard */ = {
