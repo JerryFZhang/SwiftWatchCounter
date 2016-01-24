@@ -10,10 +10,10 @@ By doing this I learnt:
 
 #Requirements
 Developed and tested under:
-Swift 2.1 
-Xcode 7.2
-iOS 9.3
-watchOS 2
+- Swift 2.1 
+- Xcode 7.2
+- iOS 9.2.1
+- watchOS 2.1
 
 #Author 
 Jerry Zhang(zhang96)
@@ -36,7 +36,6 @@ For Apple Watches:
 #Todos 
 - Touch and hold to continuously count.
 - Responsive font sizes.
-- Launch screen and App Icon(just a simple one).
 
 # License
 This component is available under MIT license.
