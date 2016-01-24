@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA37AA591C5525B800834CDF /* Font+MonospacedDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37AA581C5525B800834CDF /* Font+MonospacedDigits.swift */; };
 		FA468A701C518A2E00840CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468A6F1C518A2E00840CC6 /* AppDelegate.swift */; };
 		FA468A721C518A2E00840CC6 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA468A711C518A2E00840CC6 /* CounterViewController.swift */; };
 		FA468A751C518A2E00840CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA468A731C518A2E00840CC6 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA37AA581C5525B800834CDF /* Font+MonospacedDigits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+MonospacedDigits.swift"; sourceTree = "<group>"; };
 		FA468A6C1C518A2E00840CC6 /* SwiftWatchCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWatchCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA468A6F1C518A2E00840CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA468A711C518A2E00840CC6 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		FA468A6E1C518A2E00840CC6 /* SwiftWatchCounter */ = {
 			isa = PBXGroup;
 			children = (
+				FA37AA581C5525B800834CDF /* Font+MonospacedDigits.swift */,
 				FA468A6F1C518A2E00840CC6 /* AppDelegate.swift */,
 				FA468A711C518A2E00840CC6 /* CounterViewController.swift */,
 				FA468A731C518A2E00840CC6 /* Main.storyboard */,
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA468A721C518A2E00840CC6 /* CounterViewController.swift in Sources */,
+				FA37AA591C5525B800834CDF /* Font+MonospacedDigits.swift in Sources */,
 				FA468A701C518A2E00840CC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

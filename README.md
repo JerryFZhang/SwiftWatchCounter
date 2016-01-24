@@ -34,11 +34,8 @@ For Apple Watches:
 
 
 #Todos 
-- Change the font to monospace, so the numbers stays in place.
-- Use the vibration motor on the watch when deep pressed.
 - Touch and hold to continuously count.
-- Comments in code.
-- Font size change to make it larger on larger iPhones.
+- Responsive font sizes.
 - Launch screen and App Icon(just a simple one).
 
 # License
