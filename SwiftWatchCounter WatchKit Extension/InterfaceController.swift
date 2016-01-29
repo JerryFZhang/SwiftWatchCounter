@@ -15,16 +15,22 @@ import UIKit
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var Result: WKInterfaceLabel!
-    var counter = 0
+	// Lable on the user interface.
+    
+	var counter = 0
+	// Variable counter stored as Int.
     
     override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-        
+       
+	    super.awakeWithContext(context)
         // Configure interface objects here.
+   
     }
 
     @IBAction func Increment() {
         
+		// The counter +1 after clicking the bottom, and then the lable got updated.
+		
         counter++
         Result.setText(String(counter))
         NSLog("Incremented")
@@ -33,7 +39,10 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func Reset() {
-        counter = 0
+     
+		// Counter set to 0 and lable updated.
+		
+		counter = 0
         Result.setText(String(counter))
         
     }

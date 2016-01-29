@@ -36,6 +36,7 @@ For Apple Watches:
 #Todos 
 - Touch and hold to continuously count.
 - Responsive font sizes.
+- Coloured buttons.
 
 # License
 This component is available under MIT license.
