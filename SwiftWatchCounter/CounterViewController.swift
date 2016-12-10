@@ -25,7 +25,7 @@ class CounterViewController : UIViewController{
     var counter = 0
 	// Variable counter stored as Int.
     
-    @IBAction func Reset(sender: AnyObject) {
+    @IBAction func Reset(_ sender: AnyObject) {
 
 		// Counter set to 0 and lable updated.
 		
@@ -35,22 +35,22 @@ class CounterViewController : UIViewController{
         
     }
     
-    @IBAction func Increment(sender: AnyObject) {
+    @IBAction func Increment(_ sender: AnyObject) {
         
         
         // The counter +1 after clicking the bottom, and then the lable got updated.
 		
-        counter++
+        counter += 1
         Result.text = String(counter)
         NSLog("Incremented")
         
     }
     
-    @IBAction func ContinuouslyIncrement(sender: AnyObject) {
+    @IBAction func ContinuouslyIncrement(_ sender: AnyObject) {
         
 		// Continuously increment when touch and drag, the lable will be updated frquently.
 		
-        counter++
+        counter += 1
         Result.text = String(counter)
         NSLog("Incrementing")
 

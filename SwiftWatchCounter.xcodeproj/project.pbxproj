@@ -336,6 +336,7 @@
 					FA468A6B1C518A2E00840CC6 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = C2SEXC743T;
+						LastSwiftMigration = 0810;
 					};
 					FA468A7F1C518A2E00840CC6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -348,10 +349,12 @@
 					FA468A931C518A2E00840CC6 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = C2SEXC743T;
+						LastSwiftMigration = 0810;
 					};
 					FA468AA21C518A2F00840CC6 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = C2SEXC743T;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -600,6 +603,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -618,6 +622,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -637,6 +642,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -656,6 +662,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -672,6 +679,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Fengwei-Zhang.SwiftWatchCounter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -686,6 +694,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Fengwei-Zhang.SwiftWatchCounter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
